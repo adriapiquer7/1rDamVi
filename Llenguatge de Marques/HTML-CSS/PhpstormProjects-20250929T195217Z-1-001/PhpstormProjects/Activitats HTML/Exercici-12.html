@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" method="post">
+
+    <!-- Fieldset per a informació personal -->
+    <fieldset>
+        <legend>Informació Personal</legend>
+
+        <label for="nom">Nom complet:</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="email">Correu electrònic:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefon">Telèfon:</label>
+        <input type="tel" id="telefon" name="telefon">
+
+        <label for="edat">Edat:</label>
+        <input type="number" id="edat" name="edat" min="18" max="100">
+
+    </fieldset>
+
+    <!-- Fieldset per a preferències -->
+    <fieldset>
+        <legend>Preferències</legend>
+
+        <label for="ODS">ODS preferits:</label>
+        <select id="ODS" name="ODS" required>
+            <option value="">Selecciona un ODS</option>
+            <option value="ODS1">Fi de la pobressa</option>
+            <option value="ODS2">Fam zero</option>
+            <option value="ODS3">Salut i benestar</option>
+            <option value="ODS4">Educacio de qualitat</option>
+            <option value="ODS5">Igualtat de gènere</option>
+        </select>
+        <br>
+        <label>Tipus Assistència:</label><br>
+        <input type="radio" value="Presencial" name="assistencia" id="presencial">
+        <label for="presencial">Assistència Presencial</label>
+        <br>
+        <input type="radio" value="Virtual" name="assistencia" id="virtual">
+        <label for="virtual">Assistència Virtual</label>
+        <br>
+        <label for="comentaris">Comentaris adicionals:</label>
+        <textarea id="comentaris" name="comentaris" rows="5" cols="50" placeholder="Escriu els teus comentaris aquí..."></textarea>
+    </fieldset>
+
+    <!-- Botons del formulari -->
+    <button type="submit">Enviar Formulari</button>
+
+</form>
+
+</body>
+</html>

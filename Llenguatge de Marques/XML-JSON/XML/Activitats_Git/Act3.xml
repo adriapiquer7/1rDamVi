@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<agenda>
+  <persona>
+  <nom>Patricia</nom>
+  <cognom>Benitez</cognom>
+  <contacte>
+    <telefon>123456789</telefon>
+    <correu>a@correu.cat</correu>
+  </contacte>
+  <dataNaixement>1 de gener de 2000</dataNaixement>
+</persona>
+<persona>
+  <nom>Ccecilia</nom>
+  <cognom>Lopez</cognom>
+  <contacte>
+    <telefon>987654321</telefon>
+    <correu>b@correu.cat</correu>
+  </contacte>
+  <dataNaixement>7 de juliol de 2007</dataNaixement>
+</persona>
+</agenda>

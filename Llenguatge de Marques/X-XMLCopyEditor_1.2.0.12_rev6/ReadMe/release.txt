@@ -1,0 +1,17 @@
+---------------------------------------------------------------------
+winPenPack Project § X-Software collection
+Copyright © 2005-2014 Danilo Leggieri and winPenPack Development Team
+---------------------------------------------------------------------
+
+http://www.winpenpack.com
+winpenpack@gmail.com
+winPenPack License Agreement:
+http://www.winpenpack.com/main/page.php?5
+
+=====================================================================
+X-XMLCopyEditor 1.2.0.12 [rev 6]
+Original software Author: Gerald Schmidt
+Original software Home: http://xml-copy-editor.sourceforge.net/
+Original software license: GNU General Public License
+X-Software (portable) released on: 14/01/2014
+=====================================================================

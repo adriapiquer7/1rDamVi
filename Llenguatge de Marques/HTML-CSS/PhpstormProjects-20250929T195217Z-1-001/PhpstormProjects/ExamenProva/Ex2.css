@@ -1,0 +1,24 @@
+#animacio {
+    height: 200px;
+    width: 200px;
+    background-color: darkgreen;
+    animation-name: animacio;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacio {
+    25% {
+        transform: translate(400px, 0);
+    }
+    50% {
+        transform: translate(400px, 400px);
+    }
+    75% {
+        transform: translate(0, 400px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}

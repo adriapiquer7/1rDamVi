@@ -1,0 +1,28 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.a,.b,.c,.d,.e{
+    background-color: red;
+    color: white;
+    height: 80px;
+    width: 150px;
+    padding: 50px;
+}
+.a{
+    order: 1;
+}
+.c{
+    order: 2;
+}
+.e{
+    order: 3;
+}
+.d{
+    order: 4;
+}
+.b{
+    order: 5;
+}

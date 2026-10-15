@@ -1,0 +1,7 @@
+table, td, th{
+    border: yellow solid 5px;
+    border-collapse: collapse;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+}

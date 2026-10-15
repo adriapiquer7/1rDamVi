@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dd>
+    <Personatge id="1">
+        <Basics>
+            <ArmorClass>15</ArmorClass>
+            <HitPoints>
+            <Current>10</Current>
+            <HitDice>1d8</HitDice>
+            </HitPoints>
+            <Speed>30.ft</Speed>
+        </Basics>
+        <Abilities>
+            <STR>
+                <puntos>8</puntos>
+                <adicionales>-1</adicionales>
+            </STR>
+            <DEX>
+                <puntos>16</puntos>
+                <adicionales>3</adicionales>
+            </DEX>
+            <CON>
+                <puntos>14</puntos>
+                <adicionales>2</adicionales>
+            </CON>
+            <INT>
+                <puntos>12</puntos>
+                <adicionales>1</adicionales>
+            </INT>
+            <WIS>
+                <puntos>10</puntos>
+                <adicionales>0</adicionales>
+            </WIS>
+            <CHA>
+                <puntos>16</puntos>
+                <adicionales>3</adicionales>
+            </CHA>
+        </Abilities>
+        <Background Categoria="Entertainer">
+            <Description>You have been the center of attention since before you could walk, and once you learned to sing and play, you never surrendered the spotlight again.</Description>
+
+            <SpecialFeature>By Popular Demand</SpecialFeature>
+
+            <Faction>
+            You are a member of the Harpers, a clandestine organization who work against tyranny through the sharing of information and lore.
+            </Faction>
+
+            <PersonalityTrait>
+            You change your mood or your mind as quickly as a key changes in a song.
+            </PersonalityTrait>
+
+            <Ideal>
+            When you perform, you make the world better than it was.
+            </Ideal>
+
+            <Bond>
+            You will do anything to prove yourself superior to your hated rival.
+            </Bond>
+
+            <Flaw>
+            You're a sucker for a pretty face.
+            </Flaw>
+            <opcional>
+
+            </opcional>
+        </Background>
+        <Proficiencies>
+            <SavingThrows>
+                <Save ability="DEX">+5</Save>
+                <Save ability="CHA">+5</Save>
+                <Special>Advantage on saving throws against being charmed</Special>
+            </SavingThrows>
+            <Skills>
+                <Skill nom="Arcana">+3</Skill>
+                <Skill nom="Acrobatics">+5</Skill>
+                <Skill nom="Deception">+5</Skill>
+                <Skill nom="Insight">+2</Skill>
+                <Skill nom="Perception">+2</Skill>
+                <Skill nom="Performance">+5</Skill>
+                <Skill nom="Persuasion">+5</Skill>
+            </Skills>
+            <Armor>
+                <Item>Light armor</Item>
+            </Armor>
+            <Weapons>
+                <Item>Simple weapons</Item>
+                <Item>Hand crossbows</Item>
+                <Item>Longswords</Item>
+                <Item>Rapiers</Item>
+                <Item>Shortswords</Item>
+            </Weapons>
+            <Tools>
+                <Item>Disguise kit</Item>
+                <Item>Drum</Item>
+                <Item>Flute</Item>
+                <Item>Lute</Item>
+                <Item>Shawm</Item>
+            </Tools>
+            <Languages>
+                <Language>Common</Language>
+                <Language>Elvish</Language>
+                <Language>Halfling</Language>
+            </Languages>
+            <Senses>
+                <Darkvision>Yes</Darkvision>
+                <PassivePerception>12</PassivePerception>
+            </Senses>
+        </Proficiencies>
+        <Features>
+            <RaceFeatures race="Half-Elf">
+                <Feature>Fey Ancestry</Feature>
+                <Feature>Darkvision</Feature>
+            </RaceFeatures>
+            <ClassFeatures class="Bard">
+                <Feature>Spellcasting</Feature>
+                <Feature>Bardic Inspiration (3×/long rest, 1d6)</Feature>
+            </ClassFeatures>
+        </Features>
+        <Spellcasting>
+            <SpellSaveDC>13</SpellSaveDC>
+            <SpellAttackModifier>+5</SpellAttackModifier>
+            <SpellSlots>
+                <Level1>2</Level1>
+            </SpellSlots>
+            <Cantrips>
+                <Spell>Minor Illusion</Spell>
+                <Spell>Vicious Mockery</Spell>
+            </Cantrips>
+            <Level1Spells>
+                <Spell>Charm Person</Spell>
+                <Spell>Faerie Fire</Spell>
+                <Spell>Healing Word</Spell>
+            </Level1Spells>
+        </Spellcasting>
+        <Actions>
+            <Attack nom="Rapier">
+                <Type>Melee Weapon Attack</Type>
+                <AttackBonus>+5</AttackBonus>
+                <Reach>5 ft.</Reach>
+                <Target>One target</Target>
+                <Damage>1d8 + 3 piercing</Damage>
+            </Attack>
+            <Attack nom="Hand Crossbow">
+                <Type>Ranged Weapon Attack</Type>
+                <AttackBonus>+5</AttackBonus>
+                <Range>30/120 ft.</Range>
+                <Target>One target</Target>
+                <Damage>1d6 + 3 piercing</Damage>
+            </Attack>
+        </Actions>
+        <Equipment>
+            <Item>Rapier</Item>
+            <Item>Studded leather armor</Item>
+            <Item>Hand crossbow with 20 bolts</Item>
+            <Item>Entertainer's pack</Item>
+            <Item>Shawm</Item>
+            <Money moneda="gp">12</Money>
+        </Equipment>
+    </Personatge>
+</Dd>

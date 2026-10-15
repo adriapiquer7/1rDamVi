@@ -1,0 +1,14 @@
+#caixa1{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    border: solid 2px black;
+    padding: 20px;
+}
+#caixa2{
+    background-color: yellow;
+    width: 150px;
+    height: 100px;
+    padding: 15px;
+    border: solid 5px black;
+}

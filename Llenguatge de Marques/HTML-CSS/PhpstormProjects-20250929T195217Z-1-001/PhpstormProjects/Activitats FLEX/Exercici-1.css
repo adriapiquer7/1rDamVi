@@ -1,0 +1,19 @@
+header{
+    background-color: darkblue;
+    color: beige;
+    text-align: center;
+    padding: 10px;
+}
+#llistatenllasos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+li{
+    list-style-type: none;
+    font-size: 20px;
+}
+main{
+    text-align: center;
+}

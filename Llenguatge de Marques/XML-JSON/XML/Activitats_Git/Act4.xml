@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<bustia>
+  <misstage>
+    <remitent>
+    <nom>Pepe</nom>
+    <correu>pepe@exemple.com</correu>
+    </remitent>
+    <destinatari>
+    <nom>Juan</nom>
+    <correu>juan@exemple.com</correu>
+    </destinatari>
+    <moment>
+      <dia>
+        <dia>30</dia>
+        <mes>02</mes>
+        <any>2021</any>
+      </dia>
+      <hora>
+        <hora>13</hora>
+        <minut>13</minut>
+        <segons>01</segons>
+      </hora>
+    </moment>
+    <text>em falta gent a juny</text>
+  </misstage>
+   <misstage>
+    <remitent>
+    <nom>Juan</nom>
+    <correu>juan@exemple.com</correu>
+    </remitent>
+    <destinatari>
+    <nom>Pepe</nom>
+    <correu>pepe@exemple.com</correu>
+    </destinatari>
+    <moment>
+      <dia>
+        <dia>29</dia>
+        <mes>02</mes>
+        <any>2031</any>
+      </dia>
+      <hora>
+        <hora>11</hora>
+        <minut>11</minut>
+        <segons>13</segons>
+      </hora>
+    </moment>
+    <text>a mi em falta paracetamol</text>
+  </misstage>
+</bustia>

@@ -1,0 +1,15 @@
+div{
+    display: flex;
+    background-color: lightgreen;
+    justify-content: space-between;
+    width: 1100px;
+}
+
+.a,.b,.c,.d{
+    background-color: yellow;
+    width: 100px;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+}

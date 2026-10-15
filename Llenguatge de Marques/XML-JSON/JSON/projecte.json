@@ -1,0 +1,135 @@
+{
+  "Dd": {
+    "Personatge": {
+      "id": "1",
+      "Basics": {
+        "ArmorClass": 15,
+        "HitPoints": {
+          "Current": 10,
+          "HitDice": "1d8"
+        },
+        "Speed": "30.ft"
+      },
+      "Abilities": {
+        "STR": { "puntos": 8, "adicionales": -1 },
+        "DEX": { "puntos": 16, "adicionales": 3 },
+        "CON": { "puntos": 14, "adicionales": 2 },
+        "INT": { "puntos": 12, "adicionales": 1 },
+        "WIS": { "puntos": 10, "adicionales": 0 },
+        "CHA": { "puntos": 16, "adicionales": 3 }
+      },
+      "Background": {
+        "Categoria": "Entertainer",
+        "Description": "You have been the center of attention since before you could walk, and once you learned to sing and play, you never surrendered the spotlight again.",
+        "SpecialFeature": "By Popular Demand",
+        "Faction": "You are a member of the Harpers, a clandestine organization who work against tyranny through the sharing of information and lore.",
+        "PersonalityTrait": "You change your mood or your mind as quickly as a key changes in a song.",
+        "Ideal": "When you perform, you make the world better than it was.",
+        "Bond": "You will do anything to prove yourself superior to your hated rival.",
+        "Flaw": "You're a sucker for a pretty face.",
+        "opcional": ""
+      },
+      "Proficiencies": {
+        "SavingThrows": {
+          "Save": [
+            { "ability": "DEX", "value": "+5" },
+            { "ability": "CHA", "value": "+5" }
+          ],
+          "Special": "Advantage on saving throws against being charmed"
+        },
+        "Skills": {
+          "Skill": [
+            { "nom": "Arcana", "value": "+3" },
+            { "nom": "Acrobatics", "value": "+5" },
+            { "nom": "Deception", "value": "+5" },
+            { "nom": "Insight", "value": "+2" },
+            { "nom": "Perception", "value": "+2" },
+            { "nom": "Performance", "value": "+5" },
+            { "nom": "Persuasion", "value": "+5" }
+          ]
+        },
+        "Armor": {
+          "Item": "Light armor"
+        },
+        "Weapons": {
+          "Item": [
+            "Simple weapons",
+            "Hand crossbows",
+            "Longswords",
+            "Rapiers",
+            "Shortswords"
+          ]
+        },
+        "Tools": {
+          "Item": ["Disguise kit", "Drum", "Flute", "Lute", "Shawm"]
+        },
+        "Languages": {
+          "Language": ["Common", "Elvish", "Halfling"]
+        },
+        "Senses": {
+          "Darkvision": "Yes",
+          "PassivePerception": 12
+        }
+      },
+      "Features": {
+        "RaceFeatures": {
+          "race": "Half-Elf",
+          "Feature": ["Fey Ancestry", "Darkvision"]
+        },
+        "ClassFeatures": {
+          "class": "Bard",
+          "Feature": [
+            "Spellcasting",
+            "Bardic Inspiration (3×/long rest, 1d6)"
+          ]
+        }
+      },
+      "Spellcasting": {
+        "SpellSaveDC": 13,
+        "SpellAttackModifier": "+5",
+        "SpellSlots": {
+          "Level1": 2
+        },
+        "Cantrips": {
+          "Spell": ["Minor Illusion", "Vicious Mockery"]
+        },
+        "Level1Spells": {
+          "Spell": ["Charm Person", "Faerie Fire", "Healing Word"]
+        }
+      },
+      "Actions": {
+        "Attack": [
+          {
+            "nom": "Rapier",
+            "Type": "Melee Weapon Attack",
+            "AttackBonus": "+5",
+            "Reach": "5 ft.",
+            "Target": "One target",
+            "Damage": "1d8 + 3 piercing"
+          },
+          {
+            "nom": "Hand Crossbow",
+            "Type": "Ranged Weapon Attack",
+            "AttackBonus": "+5",
+            "Range": "30/120 ft.",
+            "Target": "One target",
+            "Damage": "1d6 + 3 piercing"
+          }
+        ]
+      },
+      "Equipment": {
+        "Item": [
+          "Rapier",
+          "Studded leather armor",
+          "Hand crossbow with 20 bolts",
+          "Entertainer's pack",
+          "Shawm"
+        ],
+        "Money": {
+          "moneda": "gp",
+          "value": 12
+        }
+      }
+    }
+  }
+}

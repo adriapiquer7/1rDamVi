@@ -1,0 +1,22 @@
+#wrap{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px black solid;
+    justify-content: center;
+    align-content: space-evenly;
+    gap: 20px;
+    text-align: center;
+    padding: 20px;
+}
+h2{
+    display: flex;
+    align-items: center;
+}
+#nowrap{
+    display: flex;
+    border: 2px black solid;
+    justify-content: center;
+    align-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+}

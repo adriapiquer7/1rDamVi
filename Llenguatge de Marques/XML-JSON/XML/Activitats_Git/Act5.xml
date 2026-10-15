@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<carrera>
+  <caso>
+    <artista>
+      <cantante>
+        <nom>Eslabon</nom>
+        <cognom>Armado</cognom>
+      </cantante>
+      <cantante>
+        <nom>Peso</nom>
+        <cognom>Pluma</cognom>
+      </cantante>
+    </artista>
+    <album>Desvelado</album>
+    <canço>Ella Baila Sola</canço>
+  </caso>
+  <caso>
+    <artista>
+      <cantante>
+        <nom>Morgan</nom>
+        <cognom>Wallen</cognom>
+      </cantante>
+    </artista>
+    <album>One Thing at a Time</album>
+    <canço>Last Night</canço>
+  </caso>
+</carrera>

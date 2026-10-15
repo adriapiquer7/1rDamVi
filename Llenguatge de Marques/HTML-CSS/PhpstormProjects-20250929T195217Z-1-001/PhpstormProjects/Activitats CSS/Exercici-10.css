@@ -1,0 +1,20 @@
+#container{
+    float:left;
+    margin-right: 20px;
+}
+#imatge2{
+    clear: left;
+}
+img{
+    height: 200px;
+    width: 400px;
+    background-color: black;
+}
+.content{
+    background-color: gray;
+    color: lime;
+    width: 50%;
+}
+.imatge{
+    border: lightcoral 30px solid;
+}

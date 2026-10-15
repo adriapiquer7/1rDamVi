@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="ex1.js" defer></script>
+    <script src="../JQUERY.js" defer></script>
+</head>
+<body>
+
+<label>Correu:</label>
+<input type="email" id="email" placeholder="correu@ies-sabadell.cat">
+
+<br><br>
+
+<label>Credencial:</label>
+<input type="password" id="credencial" placeholder="Introdueix la contrasenya">
+<br><br>
+<button onclick="getUsers()">getUsers</button>
+<button onclick="login()">login</button>
+<button onclick="register()">register</button>
+<p id="resultat"></p>
+
+<div id="taulaContainer"></div>
+</body>
+</html>

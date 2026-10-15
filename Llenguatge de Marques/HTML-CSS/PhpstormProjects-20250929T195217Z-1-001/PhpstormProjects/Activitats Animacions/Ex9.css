@@ -1,0 +1,33 @@
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lemonchiffon;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: darkolivegreen;
+    transform-origin: center;
+    animation: girarDesplaçar 4s ease-out 3;
+}
+
+@keyframes girarDesplaçar {
+    0% {
+        transform: rotateY(0deg) translateX(0) scale(1);
+        background-color: darkolivegreen;
+    }
+
+    50% {
+        transform: rotateY(90deg) translateX(100px) scale(1.5);
+        background-color: chartreuse;
+    }
+
+    100% {
+        transform: rotateZ(360deg) translateX(200px) scale(2);
+        background-color: turquoise;
+    }
+}

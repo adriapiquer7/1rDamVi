@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pokedex>
+    <!-- Gen I -->
+    <pokemon>
+        <species>BULBASAUR</species>
+        <dex>4</dex>
+        <gen>1</gen>
+        <types>
+            <type>GRASS</type>
+            <type>POISON</type>
+        </types>
+        <abilities>
+            <ability>OVERGROW</ability>
+            <dream>CHLOROPHYLL</dream>
+        </abilities>
+        <baseStats>
+            <HP>45</HP>
+            <ATK>49</ATK>
+            <DEF>49</DEF>
+            <SPD>45</SPD>
+            <SATK>45</SATK>
+            <SDEF>65</SDEF>
+        </baseStats>
+        <experience>64</experience>
+        <rateType>MEDIUM SLOW</rateType>
+        <attacks />
+    </pokemon>
+    <pokemon>
+        <species>CHARMANDER</species>
+        <dex>5</dex>
+        <gen>1</gen>
+        <types>
+            <type>FIRE</type>
+        </types>
+        <abilities>
+            <ability>BLAZE</ability>
+            <dream>SOLAR POWER</dream>
+        </abilities>
+        <baseStats>
+            <HP>39</HP>
+            <ATK>52</ATK>
+            <DEF>43</DEF>
+            <SPD>65</SPD>
+            <SATK>60</SATK>
+            <SDEF>50</SDEF>
+        </baseStats>
+        <experience>62</experience>
+        <rateType>MEDIUM SLOW</rateType>
+        <attacks />
+    </pokemon>
+    <pokemon>
+        <species>CHARIZARD</species>
+        <dex>6</dex>
+        <gen>1</gen>
+        <types>
+            <type>FIRE</type>
+            <type>FLYING</type>
+        </types>
+        <abilities>
+            <ability>BLAZE</ability>
+            <dream>SOLAR POWER</dream>
+        </abilities>
+        <baseStats>
+            <HP>78</HP>
+            <ATK>84</ATK>
+            <DEF>78</DEF>
+            <SPD>100</SPD>
+            <SATK>109</SATK>
+            <SDEF>85</SDEF>
+        </baseStats>
+        <experience>240</experience>
+        <rateType>MEDIUM SLOW</rateType>
+        <attacks />
+    </pokemon>
+    <pokemon>
+        <species>SQUIRTLE</species>
+        <dex>7</dex>
+        <gen>1</gen>
+        <types>
+            <type>WATER</type>
+        </types>
+        <abilities>
+            <ability>TORRENT</ability>
+            <dream>RAIN DISH</dream>
+        </abilities>
+        <baseStats>
+            <HP>44</HP>
+            <ATK>48</ATK>
+            <DEF>65</DEF>
+            <SPD>43</SPD>
+            <SATK>50</SATK>
+            <SDEF>64</SDEF>
+        </baseStats>
+        <experience>63</experience>
+        <rateType>MEDIUM SLOW</rateType>
+        <attacks />
+    </pokemon>
+    <pokemon>
+        <species>PIDGEY</species>
+        <dex>16</dex>
+        <gen>1</gen>
+        <types>
+            <type>NORMAL</type>
+            <type>FLYING</type>
+        </types>
+        <abilities>
+            <ability>KEEN EYE</ability>
+            <ability>TANGLED FEET</ability>
+            <dream>BIG PECKS</dream>
+        </abilities>
+        <baseStats>
+            <HP>40</HP>
+            <ATK>45</ATK>
+            <DEF>40</DEF>
+            <SPD>56</SPD>
+            <SATK>35</SATK>
+            <SDEF>35</SDEF>
+        </baseStats>
+        <experience>50</experience>
+        <rateType>MEDIUM SLOW</rateType>
+        <attacks />
+    </pokemon>
+    <pokemon>
+        <species>RATTATA</species>
+        <dex>19</dex>
+        <gen>1</gen>
+        <types>
+            <type>NORMAL</type>
+        </types>
+        <abilities>
+            <ability>RUN AWAY</ability>
+            <ability>GUTS</ability>
+            <dream>HUSTLE</dream>
+        </abilities>
+        <baseStats>
+            <HP>30</HP>
+            <ATK>56</ATK>
+            <DEF>35</DEF>
+            <SPD>72</SPD>
+            <SATK>25</SATK>
+            <SDEF>35</SDEF>
+        </baseStats>
+        <experience>51</experience>
+        <rateType>MEDIUM FAST</rateType>
+        <attacks />
+    </pokemon>
+    <pokemon>
+        <species>RAICHU</species>
+        <dex>26</dex>
+        <gen>1</gen>
+        <types>
+            <type>ELECTRIC</type>
+        </types>
+        <abilities>
+            <ability>STATIC</ability>
+            <dream>LIGHTNING ROD</dream>
+        </abilities>
+        <baseStats>
+            <HP>60</HP>
+            <ATK>90</ATK>
+            <DEF>55</DEF>
+            <SPD>100</SPD>
+            <SATK>90</SATK>
+            <SDEF>80</SDEF>
+        </baseStats>
+        <experience>214</experience>
+        <rateType>MEDIUM FAST</rateType>
+        <attacks />
+    </pokemon>
+    <pokemon>
+        <species>NIDOKING</species>
+        <dex>34</dex>
+        <gen>1</gen>
+        <types>
+            <type>POISON</type>
+            <type>GROUND</type>
+        </types>
+        <abilities>
+            <ability>POISON POINT</ability>
+            <ability>RIVALRY</ability>
+            <dream>SHEER FORCE</dream>
+        </abilities>
+        <baseStats>
+            <HP>60</HP>
+            <ATK>90</ATK>
+            <DEF>55</DEF>
+            <SPD>100</SPD>
+            <SATK>90</SATK>
+            <SDEF>80</SDEF>
+        </baseStats>
+        <experience>223</experience>
+        <rateType>MEDIUM SLOW</rateType>
+        <attacks />
+    </pokemon>
+    <pokemon>
+        <species>GEODUDE</species>
+        <dex>74</dex>
+        <gen>1</gen>
+        <types>
+            <type>ROCK</type>
+            <type>GROUND</type>
+        </types>
+        <abilities>
+            <ability>ROCK HEAD</ability>
+            <ability>STURDY</ability>
+            <dream>SAND VEIL</dream>
+        </abilities>
+        <baseStats>
+            <HP>40</HP>
+            <ATK>80</ATK>
+            <DEF>100</DEF>
+            <SPD>20</SPD>
+            <SATK>30</SATK>
+            <SDEF>30</SDEF>
+        </baseStats>
+        <experience>60</experience>
+        <rateType>MEDIUM SLOW</rateType>
+        <attacks />
+    </pokemon>
+    <pokemon>
+        <species>ELECTRODE</species>
+        <dex>101</dex>
+        <gen>1</gen>
+        <types>
+            <type>ELECTRIC</type>
+        </types>
+        <abilities>
+            <ability>SOUNDPROOF</ability>
+            <ability>STATIC</ability>
+            <dream>AFTERMATH</dream>
+        </abilities>
+        <baseStats>
+            <HP>60</HP>
+            <ATK>50</ATK>
+            <DEF>70</DEF>
+            <SPD>140</SPD>
+            <SATK>80</SATK>
+            <SDEF>80</SDEF>
+        </baseStats>
+        <experience>168</experience>
+        <rateType>MEDIUM FAST</rateType>
+        <attacks />
+    </pokemon>
+    <pokemon>
+        <species>GYARADOS</species>
+        <dex>130</dex>
+        <gen>1</gen>
+        <types>
+            <type>WATER</type>
+            <type>FLYING</type>
+        </types>
+        <abilities>
+            <ability>INTIMIDATE</ability>
+            <dream>MOXIE</dream>
+        </abilities>
+        <baseStats>
+            <HP>95</HP>
+            <ATK>125</ATK>
+            <DEF>79</DEF>
+            <SPD>81</SPD>
+            <SATK>60</SATK>
+            <SDEF>100</SDEF>
+        </baseStats>
+        <experience>189</experience>
+        <rateType>SLOW</rateType>
+        <attacks />
+    </pokemon>
+</pokedex>

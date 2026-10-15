@@ -1,0 +1,19 @@
+table, tbody,tr, td{
+    border-collapse: collapse;
+    border-width: 5px;
+    border-style: solid;
+    border-color: limegreen;
+}
+#sostenibilitat td {
+    width: 150px;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: bottom;
+    padding-top: 5px;
+    padding-bottom: 12px;
+}
+
+.realsar {
+    background-color: fuchsia;
+}
+

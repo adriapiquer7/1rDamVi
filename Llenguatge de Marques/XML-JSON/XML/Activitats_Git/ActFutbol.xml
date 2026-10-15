@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<lliga>
+  <equip id="1">
+    <nom>Futbol Club Barcelona</nom>
+    <ciutat>Barcelona</ciutat>
+    <entrenador>
+      <nom>Hansi</nom>
+      <cognom>Flick</cognom>
+      <pais>Alemanya</pais>
+    </entrenador>
+    <plantilla>
+      <jugadors>
+        <jugador internacional="True">
+          <nom>Lamine</nom>
+          <cognoms>
+            <cognom1>Yamal</cognom1>
+            <cognom2>Nasraoui</cognom2>
+          </cognoms>
+          <dorsal>10</dorsal>
+          <pais>España</pais>
+          <posicio>davanter</posicio>
+        </jugador>
+        <jugador internacional="True">
+          <nom>Robert</nom>
+          <cognoms>
+            <cognom1>Lewandowsky</cognom1>
+          </cognoms>
+          <dorsal>9</dorsal>
+          <pais>Polonia</pais>
+          <posicio>davanter</posicio>
+        </jugador>
+        <jugador internacional="True">
+          <nom>Raphinha</nom>
+          <cognoms>
+            <cognom1>Dias</cognom1>
+            <cognom2>Belloli</cognom2>
+          </cognoms>
+          <dorsal>11</dorsal>
+          <pais>Brasil</pais>
+          <posicio>davanter</posicio>
+        </jugador>
+      </jugadors>
+    </plantilla>
+    <estadi>
+      <nom>Camp nou</nom>
+      <any_construccio>1899</any_construccio>
+      <capacitat>100.000</capacitat>
+    </estadi>
+  </equip>
+    <equip id="2">
+    <nom>Real Madrid</nom>
+    <ciutat>Madrid</ciutat>
+    <entrenador>
+      <nom>Xabi</nom>
+      <cognom>Alonso</cognom>
+      <pais>España</pais>
+    </entrenador>
+    <plantilla>
+      <jugadors>
+        <jugador internacional="True">
+          <nom>kylian</nom>
+          <cognoms>
+            <cognom1>Mbappé</cognom1>
+            <cognom2>Lottin</cognom2>
+          </cognoms>
+          <dorsal>10</dorsal>
+          <pais>França</pais>
+          <posicio>davanter</posicio>
+        </jugador>
+        <jugador internacional="True">
+          <nom>Jude</nom>
+          <cognoms>
+            <cognom1>Bellingham</cognom1>
+          </cognoms>
+          <dorsal>5</dorsal>
+          <pais>Inglaterra</pais>
+          <posicio>migcampista</posicio>
+        </jugador>
+        <jugador internacional="False">
+          <nom>Franco</nom>
+          <cognoms>
+            <cognom1>Martín</cognom1>
+            <cognom2>Mastantuono</cognom2>
+          </cognoms>
+          <dorsal>30</dorsal>
+          <pais>Argentina</pais>
+          <posicio>migcampista</posicio>
+        </jugador>
+      </jugadors>
+    </plantilla>
+    <estadi>
+      <nom>Santiago Bernabeu</nom>
+      <any_construccio>1850</any_construccio>
+      <capacitat>90.000</capacitat>
+    </estadi>
+  </equip>
+</lliga>
