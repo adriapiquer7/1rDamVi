@@ -1,0 +1,173 @@
+
+DROP DATABASE IF EXISTS professorat_fp;
+CREATE DATABASE professorat_fp;
+USE professorat_fp;
+
+CREATE TABLE TITULACIONS(
+    Codi VARCHAR(10),
+    Nivell VARCHAR(50) NOT NULL,
+    NomComplet VARCHAR(150) NOT NULL,
+    CONSTRAINT pk_titulacions PRIMARY KEY (Codi)
+);
+
+CREATE TABLE CENTRES(
+    Codi VARCHAR(10),
+    Nom VARCHAR(100) NOT NULL,
+    Adreca VARCHAR(150) NOT NULL,
+    Telefon VARCHAR(15),
+    Mail VARCHAR(100),
+    NomResponsable VARCHAR(50) NOT NULL,
+    Cognom1Responsable VARCHAR(50) NOT NULL,
+    Cognom2Responsable VARCHAR(50),
+    MailResponsable VARCHAR(100) NOT NULL,
+    CONSTRAINT pk_centres PRIMARY KEY (Codi)
+);
+
+CREATE TABLE ESPECIALITATS(
+    Codi VARCHAR(10),
+    Nom VARCHAR(100) NOT NULL,
+    CONSTRAINT pk_especialitats PRIMARY KEY (Codi)
+);
+
+CREATE TABLE TITOLS(
+    Codi VARCHAR(10),
+    NomComplet VARCHAR(150) NOT NULL,
+    CONSTRAINT pk_titols PRIMARY KEY (Codi)
+);
+
+CREATE TABLE PROFESSORAT(
+    DNI VARCHAR(9),
+    Nom VARCHAR(50) NOT NULL,
+    Cognom1 VARCHAR(50) NOT NULL,
+    Cognom2 VARCHAR(50),
+    Adreca VARCHAR(150),
+    AnyNaixement INT,
+    Telf VARCHAR(15),
+    Mail VARCHAR(100),
+    NumCompte VARCHAR(34),
+    CONSTRAINT pk_professorat PRIMARY KEY (DNI),
+    CONSTRAINT chk_any CHECK (AnyNaixement > 1950)
+);
+
+CREATE TABLE DATES(
+    Data DATE,
+    CONSTRAINT pk_dates PRIMARY KEY (Data)
+);
+
+CREATE TABLE MODULS(
+    CodiMod VARCHAR(10),
+    CodiCicle VARCHAR(10),
+    NomComplet VARCHAR(150) NOT NULL,
+    Hores INT NOT NULL,
+    CONSTRAINT pk_moduls PRIMARY KEY (CodiMod, CodiCicle),
+    CONSTRAINT fk_moduls_titulacions FOREIGN KEY (CodiCicle) REFERENCES TITULACIONS(Codi),
+    CONSTRAINT chk_hores CHECK (Hores > 0)
+);
+
+CREATE TABLE CENTRE_TITULACIONS(
+    CodiCicle VARCHAR(10),
+    CodiCentre VARCHAR(10),
+    CONSTRAINT pk_centre_titulacions PRIMARY KEY (CodiCicle, CodiCentre),
+    CONSTRAINT fk_ct_titulacions FOREIGN KEY (CodiCicle) REFERENCES TITULACIONS(Codi),
+    CONSTRAINT fk_ct_centres FOREIGN KEY (CodiCentre) REFERENCES CENTRES(Codi)
+);
+
+CREATE TABLE SUBSTITUCIONS(
+    Data DATE,
+    DNI_substitut VARCHAR(9),
+    DNI_titular VARCHAR(9),
+    CONSTRAINT pk_substitucions PRIMARY KEY (Data, DNI_substitut),
+    CONSTRAINT fk_sub_data FOREIGN KEY (Data) REFERENCES DATES(Data),
+    CONSTRAINT fk_sub_substitut FOREIGN KEY (DNI_substitut) REFERENCES PROFESSORAT(DNI),
+    CONSTRAINT fk_sub_titular FOREIGN KEY (DNI_titular) REFERENCES PROFESSORAT(DNI),
+    CONSTRAINT chk_dni_diff CHECK (DNI_substitut <> DNI_titular)
+);
+
+CREATE TABLE PROF_CENT_DATES(
+    DNI_prof VARCHAR(9),
+    CodiCentre VARCHAR(10),
+    Data DATE,
+    Qualificacio VARCHAR(50),
+    DataFi DATE,
+    CONSTRAINT pk_prof_cent PRIMARY KEY (DNI_prof, CodiCentre, Data),
+    CONSTRAINT fk_pcd_prof FOREIGN KEY (DNI_prof) REFERENCES PROFESSORAT(DNI),
+    CONSTRAINT fk_pcd_centre FOREIGN KEY (CodiCentre) REFERENCES CENTRES(Codi),
+    CONSTRAINT fk_pcd_data FOREIGN KEY (Data) REFERENCES DATES(Data),
+    CONSTRAINT chk_dates CHECK (DataFi IS NULL OR DataFi > Data)
+);
+
+CREATE TABLE PROF_TITOLS(
+    DNI_prof VARCHAR(9),
+    CodiTitol VARCHAR(10),
+    CONSTRAINT pk_prof_titols PRIMARY KEY (DNI_prof, CodiTitol),
+    CONSTRAINT fk_pt_prof FOREIGN KEY (DNI_prof) REFERENCES PROFESSORAT(DNI),
+    CONSTRAINT fk_pt_titol FOREIGN KEY (CodiTitol) REFERENCES TITOLS(Codi)
+);
+
+CREATE TABLE PROF_ESPES(
+    DNI_prof VARCHAR(9),
+    CodiEspe VARCHAR(10),
+    CONSTRAINT pk_prof_espes PRIMARY KEY (DNI_prof, CodiEspe),
+    CONSTRAINT fk_pe_prof FOREIGN KEY (DNI_prof) REFERENCES PROFESSORAT(DNI),
+    CONSTRAINT fk_pe_espe FOREIGN KEY (CodiEspe) REFERENCES ESPECIALITATS(Codi)
+);
+
+CREATE TABLE ESPES_TITOLS(
+    CodiEspe VARCHAR(10),
+    CodiTitol VARCHAR(10),
+    CONSTRAINT pk_espes_titols PRIMARY KEY (CodiEspe, CodiTitol),
+    CONSTRAINT fk_et_espe FOREIGN KEY (CodiEspe) REFERENCES ESPECIALITATS(Codi),
+    CONSTRAINT fk_et_titol FOREIGN KEY (CodiTitol) REFERENCES TITOLS(Codi)
+);
+
+INSERT INTO TITULACIONS VALUES
+('DAM', 'Grau Superior', 'Desenvolupament Aplicacions Multiplataforma'),
+('ASIX', 'Grau Superior', 'Administracio Sistemes Informatics');
+
+INSERT INTO CENTRES VALUES
+('C1', 'Institut Tecnologic', 'Carrer Major 1', '123456789', 'info@insti.cat', 'Joan', 'Garcia', 'Lopez', 'joan@insti.cat'),
+('C2', 'Institut Digital', 'Av Catalunya 10', '987654321', 'contacte@digital.cat', 'Anna', 'Martinez', 'Soler', 'anna@digital.cat');
+
+INSERT INTO ESPECIALITATS VALUES
+('ESP1', 'Informatica'),
+('ESP2', 'Xarxes');
+
+INSERT INTO TITOLS VALUES
+('T1', 'Enginyeria Informatica'),
+('T2', 'FP Superior');
+
+INSERT INTO PROFESSORAT VALUES
+('12345678A', 'Marc', 'Perez', 'Lopez', 'Carrer A', 1980, '600111222', 'marc@mail.com', 'ES123'),
+('87654321B', 'Laura', 'Gomez', 'Ruiz', 'Carrer B', 1975, '600333444', 'laura@mail.com', 'ES456');
+
+INSERT INTO DATES VALUES
+('2024-01-01'),
+('2024-02-01');
+
+INSERT INTO MODULS VALUES
+('M1', 'DAM', 'Programacio', 200),
+('M2', 'ASIX', 'Xarxes', 150);
+
+INSERT INTO CENTRE_TITULACIONS VALUES
+('DAM', 'C1'),
+('ASIX', 'C2');
+
+INSERT INTO SUBSTITUCIONS VALUES
+('2024-01-01', '12345678A', '87654321B'),
+('2024-02-01', '87654321B', '12345678A');
+
+INSERT INTO PROF_CENT_DATES VALUES
+('12345678A', 'C1', '2024-01-01', 'Alta', NULL),
+('87654321B', 'C2', '2024-02-01', 'Baixa', '2024-03-01');
+
+INSERT INTO PROF_TITOLS VALUES
+('12345678A', 'T1'),
+('87654321B', 'T2');
+
+INSERT INTO PROF_ESPES VALUES
+('12345678A', 'ESP1'),
+('87654321B', 'ESP2');
+
+INSERT INTO ESPES_TITOLS VALUES
+('ESP1', 'T1'),
+('ESP2', 'T2');

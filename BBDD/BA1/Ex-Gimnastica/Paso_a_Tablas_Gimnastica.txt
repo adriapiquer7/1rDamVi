@@ -1,0 +1,43 @@
+Paso a Tablas
+-------------
+PERSONA(num_fitxa_Directiva(PK), nom, cognom)
+ PK: num_fitxa_Directiva
+
+ENTRENADORS(num_fitxa_Directiva(PK), DNI, Titulació, Adreça)
+ PK: num_fitxa_Directiva
+ FK: num_fitxa_Directiva --> PERSONA
+
+GIMNASTES(num_fitxa_Directiva(PK), Data_naixement, nom_club(PK), num_fitxa_Directiva_Entrenadors)
+ PK: num_fitxa_Directiva
+ FK: num_fitxa_Directiva --> PERSONA
+ FK: nom_club--> CLUB
+ FK: num_fitxa_Directiva_Entrenadors--> ENTRENADORS
+
+JUTGESSES(num_fitxa_Directiva(PK), DNI, Titulació, Adreça)
+ PK: num_fitxa_Directiva
+ FK: num_fitxa_Directiva --> PERSONA
+
+CLUB(Nom(PK), Provincia, Adreça, President)
+ PK: Nom
+
+IDIOMES(id_idioma(PK), idioma)
+ PK: id_idioma
+
+HABLA(id_idioma(PK), num_fitxa_Directiva_Jutgesses(PK))
+ PK: (id_idioma, num_fitxa_Directiva_Jutgesses)
+ FK: id_idioma --> IDIOMA
+ FK: num_fitxa_Directiva_Jutgesses --> JUTGESSES
+
+EXERCICI(id_ex(PK), aparell)
+ PK: id_ex
+
+TREBALLA(nom_club(PK),num_fitxa_directiva_entrenadors(PK), data_inici(PK), data_fi)
+ PK: nom_club, num_fitxa_directiva_entrenadora, data_inici
+ FK: nom_club-->CLUB
+ FK: num_fitxa_directiva_entrenadors-->ENTRENADORS
+
+QUALIFICAR(id_ex(PK), num_fitxa_Directiva_Jutgesses(PK), num_fitxa_Directiva_Gimnastes, nota)
+ PK: (id_ex, num_fitxa_Directiva_Jutgesses, num_fitxa_Directiva_Gimnastes)
+ FK: id_ex --> EXERCICI
+ FK: num_fitxa_Directiva_Gimnastes --> GIMNASTES
+ FK: num_fitxa_Directiva_Jutgesses --> JUTGESSES

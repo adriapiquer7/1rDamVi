@@ -1,0 +1,75 @@
+ALTER TABLE cotxes
+ADD portes INT,
+ADD potencia INT;
+
+ALTER TABLE cotxes
+ADD CONSTRAINT chk_portes CHECK (portes BETWEEN 1 AND 5);
+
+INSERT INTO cotxes (matricula, marca, model, color, classe, any_matriculacio, tipus, combustible, quilometratge, preuDia, disponibilitat, portes, potencia)
+VALUES ('9999ZZZ', 'Seat', 'Ibiza', 'Blanc', 'B', 2020, 'Manual', 'Gasolina', 10000, 50, 1, 7, 90);
+
+-- Primer pot fallar si hi ha dades incorrectes
+-- Solució: actualitzar dades fora de rang
+
+UPDATE cotxes
+SET preuDia = 50
+WHERE preuDia < 20 OR preuDia > 200;
+
+ALTER TABLE cotxes
+ADD CONSTRAINT chk_preu CHECK (preuDia BETWEEN 20 AND 200);
+
+ALTER TABLE cotxes DROP CHECK chk_portes;
+
+ALTER TABLE cotxes
+ADD CONSTRAINT chk_portes CHECK (portes BETWEEN 1 AND 9);
+
+ALTER TABLE clients
+MODIFY nom VARCHAR(25),
+MODIFY cognom1 VARCHAR(30),
+MODIFY cognom2 VARCHAR(30);
+
+ALTER TABLE cotxes
+MODIFY quilometratge INT DEFAULT 0;
+
+ALTER TABLE clients
+CHANGE email correuElectronic VARCHAR(100);
+
+ALTER TABLE clients
+ADD data_alta DATE DEFAULT CURRENT_DATE;
+
+ALTER TABLE lloguers
+ADD CONSTRAINT chk_dates_lloguer 
+CHECK (data_fi IS NULL OR data_fi >= data_inici);
+
+INSERT INTO lloguers (idClient, matricula, data_inici, data_fi, preu_total)
+VALUES (1, '1234ABC', '2026-01-01', '2026-01-05', 200);
+
+INSERT INTO lloguers (idClient, matricula, data_inici, data_fi, preu_total)
+VALUES (1, '1234ABC', '2026-01-10', '2026-01-05', 200);
+
+ALTER TABLE cotxes
+DROP COLUMN tipus;
+
+ALTER TABLE clients
+MODIFY correuElectronic VARCHAR(100) NOT NULL;
+
+ALTER TABLE lloguers
+ADD CONSTRAINT unique_lloguer UNIQUE (idClient, matricula, data_inici);
+
+ALTER TABLE cotxes
+DROP CHECK chk_portes;
+
+CREATE TABLE ciutats(
+    id_ciutat INT AUTO_INCREMENT,
+    nom_ciutat VARCHAR(100) NOT NULL,
+    habitants INT,
+
+    CONSTRAINT pk_ciutats PRIMARY KEY (id_ciutat)
+);
+
+ALTER TABLE clients
+ADD id_ciutat INT;
+
+ALTER TABLE clients
+ADD CONSTRAINT fk_clients_ciutat
+FOREIGN KEY (id_ciutat) REFERENCES ciutats(id_ciutat);

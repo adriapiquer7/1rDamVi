@@ -1,0 +1,47 @@
+UPDATE products
+SET product_code = CONCAT('CODE_', id)
+WHERE product_code IS NULL;
+
+ALTER TABLE products
+MODIFY product_code VARCHAR(50) NOT NULL;
+
+ALTER TABLE products
+MODIFY product_name VARCHAR(40) NOT NULL;
+
+SELECT MAX(standard_cost) AS max_cost, MAX(list_price) AS max_price
+FROM products;
+
+ALTER TABLE products
+MODIFY standard_cost DECIMAL(10,2),
+MODIFY list_price DECIMAL(10,2);
+
+ALTER TABLE order_details
+MODIFY unit_price DECIMAL(10,2);
+
+ALTER TABLE products
+ADD IVA INT NOT NULL DEFAULT 10;
+
+ALTER TABLE products
+MODIFY minimum_reorder_quantity INT DEFAULT 0;
+
+ALTER TABLE customers
+ADD CONSTRAINT chk_email
+CHECK (email_address LIKE '%@%.%');
+
+SELECT product_code, COUNT(*)
+FROM products
+GROUP BY product_code
+HAVING COUNT(*) > 1;
+
+UPDATE products
+SET product_code = CONCAT(product_code, '_', id)
+WHERE product_code IN (
+    SELECT pc FROM (SELECT product_code AS pc
+        			FROM products
+        			GROUP BY product_code
+        			HAVING COUNT(*) > 1
+    ) AS t
+);
+
+ALTER TABLE products
+ADD CONSTRAINT unique_product_code UNIQUE (product_code);
