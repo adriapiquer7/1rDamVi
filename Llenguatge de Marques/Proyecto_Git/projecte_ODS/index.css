@@ -1,0 +1,42 @@
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #020617;
+    color: white;
+}
+
+.barra {
+    background-color: transparent !important;
+    border-bottom: 2px solid white;
+    color: white;
+}
+.barra .navbar-nav {
+    text-align: left;
+}
+body::before {
+    content: '';
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
+}
+
+.lineafooter {
+    border-top: 2px solid white;
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+#carouselODS {
+    max-width: 500px;
+    margin: 0 auto;
+}
+

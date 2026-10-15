@@ -1,0 +1,55 @@
+body {
+    position: relative;
+    min-height: 100vh;
+    background-color: #020617;
+    color: white;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
+    z-index: -10;
+}
+
+.barra {
+    background-color: transparent !important;
+    border-bottom: 2px solid white;
+}
+
+.flex-section {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.flex-section img {
+    width: 180px;
+}
+
+.lineafooter {
+    border-top: 2px solid white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+.flex-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.flex-actions .action-card {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 200px;
+    max-width: 250px;
+    text-align: center;
+}
+
+

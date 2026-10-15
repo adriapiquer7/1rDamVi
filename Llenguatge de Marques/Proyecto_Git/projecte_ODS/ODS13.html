@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>ODS 13 - Acció climàtica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="ODS13.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light barra">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">WEB ODS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active text-light" href="index.html">INICI</a>
+                    <a class="nav-link text-light" href="ODS1.html">ODS1</a>
+                    <a class="nav-link text-light" href="ODS13.html">ODS13</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="container my-5">
+    <h1 class="text-center mb-4">ODS 13: Acció climàtica</h1>
+    <section class="flex-section mb-5">
+        <img src="data:image/png;base64,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">
+        <p>
+            L'ODS 13 promou accions urgents per combatre el canvi climàtic
+            i els seus impactes, fomentant energies renovables i sostenibilitat.
+        </p>
+    </section>
+    <h2>Impacte del canvi climàtic</h2>
+    <table class="table table-dark table-bordered">
+        <tr>
+            <th>Fenomen</th>
+            <th>Impacte</th>
+        </tr>
+        <tr>
+            <td>Augment temperatura</td>
+            <td>Onades de calor extremes</td>
+        </tr>
+        <tr>
+            <td>Fusió gels</td>
+            <td>Augment nivell del mar</td>
+        </tr>
+    </table>
+    <section class="mt-5">
+        <h2>Què podem fer com a ciutadans?</h2>
+        <ul class="text-light mt-3" style="list-style-type: disc; padding-left: 20px;">
+            <li>Reduir el consum d’energia i utilitzar fonts renovables</li>
+            <li>Fomentar el transport sostenible</li>
+            <li>Reduir, reutilitzar i reciclar</li>
+            <li>Donar suport a iniciatives mediambientals</li>
+        </ul>
+    </section>
+    <section class="flex-actions mt-5">
+        <h2 class="text-center w-100 mb-4">Accions concretes</h2>
+        <div class="action-card">
+            <h3>Energia neta</h3>
+            <p>Instal·la panells solars i utilitza fonts renovables a casa.</p>
+        </div>
+        <div class="action-card">
+            <h3>Transport sostenible</h3>
+            <p>Utilitza bicicleta, caminar o transport públic sempre que puguis.</p>
+        </div>
+        <div class="action-card">
+            <h3>Consum responsable</h3>
+            <p>Redueix el consum de plàstics i compra productes locals.</p>
+        </div>
+        <div class="action-card">
+            <h3>Participació ciutadana</h3>
+            <p>Apunta’t a iniciatives i projectes mediambientals de la teva ciutat.</p>
+        </div>
+    </section>
+    <section class="mt-5 text-center">
+        <h2>Vídeo sobre l’acció climàtica</h2>
+        <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/8ea6N2NS-38?si=QaBzgxn_8Hg8Iz1t"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+        </iframe>
+    </section>
+</main>
+
+<footer class="lineafooter">
+    <p>Projecte sobre els ODS | Font: Nacions Unides | Realitzat per Adrià Piquer</p>
+    <p>Més informació a <a href="https://www.un.org/sustainabledevelopment/es/" target="_blank">l’ONU</a></p>
+</footer>
+</body>
+</html>

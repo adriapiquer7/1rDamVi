@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>ODS 1 - Fi de la pobresa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="ODS1.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light barra">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">WEB ODS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active text-light" href="index.html">INICI</a>
+                    <a class="nav-link text-light" href="ODS1.html">ODS1</a>
+                    <a class="nav-link text-light" href="ODS13.html">ODS13</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="container my-5 grid-main">
+    <h1 class="text-center mb-4">ODS 1: Fi de la pobresa</h1> <section class="flex-section mb-5"> <img src="data:image/png;base64,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">
+        <p>
+            L’ODS 1 busca erradicar la pobresa extrema en totes les seves formes.
+            Inclou garantir accés a recursos bàsics com alimentació, educació i habitatge.
+        </p>
+    </section>
+    <section class="grid-table">
+        <h2>Dades rellevants</h2>
+        <table class="table table-dark table-bordered">
+            <tr>
+                <th>Any</th>
+                <th>Persones en pobresa extrema</th>
+            </tr>
+            <tr>
+                <td>2015</td>
+                <td>736 milions</td>
+            </tr>
+            <tr>
+                <td>2023</td>
+                <td>aprox. 690 milions</td>
+            </tr>
+        </table>
+    </section>
+    <section class="grid-facts">
+        <h2>Dades clau sobre la pobresa</h2>
+        <div class="fact">
+            <h3>736 milions</h3>
+            <p>Persones vivint en pobresa extrema l'any 2015.</p>
+        </div>
+        <div class="fact">
+            <h3>690 milions</h3>
+            <p>Persones aproximadament en pobresa extrema el 2023.</p>
+        </div>
+        <div class="fact">
+            <h3>Accés a recursos</h3>
+            <p>Garantir alimentació, educació i habitatge bàsics.</p>
+        </div>
+        <div class="fact">
+            <h3>Objectiu</h3>
+            <p>Erradicar la pobresa extrema en totes les seves formes.</p>
+        </div>
+    </section>
+    <h2 class="mt-5">Participa</h2>
+    <form class="form-dark">
+        <label>Nom</label>
+        <input type="text" class="form-control">
+
+        <label>Email</label>
+        <input type="email" class="form-control">
+
+        <label>Comentari</label>
+        <textarea class="form-control"></textarea>
+
+        <button type="submit" class="btn btn-outline-light mt-3">Enviar</button>
+    </form>
+</main>
+<footer class="lineafooter">
+    <p>Projecte sobre els ODS | Font: Nacions Unides | Realitzat per Adrià Piquer</p>
+    <p>Més informació a <a href="https://www.un.org/sustainabledevelopment/es/" target="_blank">l’ONU</a></p>
+</footer>
+</body>
+</html>
